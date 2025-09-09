@@ -6,6 +6,7 @@
 
 // By declaring the modules here with `pub`, we make them available
 // to any binary (like main.rs) that uses this library.
+pub mod borrowing;
 pub mod collections;
 pub mod enums;
 pub mod file_io;

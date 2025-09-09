@@ -19,6 +19,10 @@ fn main() {
     iterators::run_examples();
     println!("\n");
 
+    println!("--- Running Borrowing Examples ---");
+    borrowing::run_examples();
+    println!("\n");
+
     println!("--- Running File I/O Example ---");
     // This function will handle its own output and errors.
     file_io::read_file_from_args();
