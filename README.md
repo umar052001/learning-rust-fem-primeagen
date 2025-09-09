@@ -2,7 +2,7 @@
 
 Status: In Progress – Covering Core Concepts and Error Handling
 
-This repository contains a structured, modular collection of Rust examples and exercises tailored for learners transitioning to Rust. The intent is to progressively build understanding and reference materials, promoting continuous evolution as you advance through your Rust learning journey. Once complete, this project will be shared publicly under the MIT License to aid others following the same journey.
+This repository contains a structured, modular collection of Rust examples and exercises tailored for learners transitioning to Rust. The intent is to progressively build understanding and reference materials, promoting continuous evolution as you advance through your Rust learning journey. 
 
 ## Project Structure
 The project is organized into a library with modules for each key concept.
