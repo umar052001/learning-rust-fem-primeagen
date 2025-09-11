@@ -10,6 +10,15 @@ pub fn read_file_from_args() {
             Ok(file_contents) => {
                 println!("--- File Contents ---");
                 file_contents.lines().for_each(|line| println!("{}", line));
+                //test it with numbers.txt file
+                println!("---check number or line---");
+                file_contents.lines().for_each(|line| {
+                    if let Ok(value) = line.parse::<usize>() {
+                        println!("{}", value);
+                    } else {
+                        println!("Line not a number");
+                    }
+                });
                 println!("--- End of File ---");
                 process_file_lines(&file_contents);
             }
@@ -34,4 +43,9 @@ fn process_file_lines(contents: &str) {
         .skip(2) // Skip the first 2 of the remaining lines
         .take(2) // Take the next 2
         .for_each(|(_, line)| println!("  - Processed line: {}", line));
+    println!("\n--- Processing file with iterator filter map---");
+    contents
+        .lines()
+        .filter_map(|line| line.parse::<usize>().ok()) //this is for numbers file
+        .for_each(|line| println!("{}", line));
 }
