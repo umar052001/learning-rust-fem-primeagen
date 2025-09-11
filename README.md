@@ -10,6 +10,7 @@ The project is organized into a library with modules for each key concept.
 ```
 ├── src/
 │   ├── borrowing.rs           # Examples of ownership and borrowing rules
+│   ├── borrowchecker_lifetime.rs           # Examples of borrowchecker & lifetime 
 │   ├── collections.rs         # Vector and HashMap examples
 │   ├── enums.rs               # `enum` and `impl` usage
 │   ├── error_handling.rs      # Demonstrating `Option` and `Result`

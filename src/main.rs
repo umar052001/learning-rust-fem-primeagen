@@ -23,6 +23,14 @@ fn main() {
     borrowing::run_examples();
     println!("\n");
 
+    println!("--- Running borrowchecker_lifetime Examples ---");
+    borrowchecker_lifetime::run_examples();
+    println!("\n");
+
+    println!("--- Running Traits Examples ---");
+    traits::run_examples();
+    println!("\n");
+
     println!("--- Running File I/O Example ---");
     // This function will handle its own output and errors.
     file_io::read_file_from_args();

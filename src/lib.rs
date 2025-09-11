@@ -6,9 +6,12 @@
 
 // By declaring the modules here with `pub`, we make them available
 // to any binary (like main.rs) that uses this library.
+pub mod borrowchecker_lifetime;
 pub mod borrowing;
 pub mod collections;
 pub mod enums;
 pub mod file_io;
 pub mod iterators;
+pub mod shapes;
 pub mod structs_and_data;
+pub mod traits;
