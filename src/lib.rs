@@ -9,6 +9,7 @@
 pub mod borrowchecker_lifetime;
 pub mod borrowing;
 pub mod collections;
+pub mod collisions;
 pub mod enums;
 pub mod file_io;
 pub mod iterators;
