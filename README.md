@@ -10,7 +10,7 @@ The project is organized into a library with modules for each key concept.
 ```
 ├── src/
 │   ├── borrowing.rs           # Examples of ownership and borrowing rules
-│   ├── borrowchecker_lifetime.rs           # Examples of borrowchecker & lifetime 
+│   ├── borrowchecker.rs           # Examples of borrowchecker 
 │   ├── collections.rs         # Vector and HashMap examples
 │   ├── enums.rs               # `enum` and `impl` usage
 │   ├── error_handling.rs      # Demonstrating `Option` and `Result`
@@ -18,8 +18,12 @@ The project is organized into a library with modules for each key concept.
 │   ├── iterators.rs           # Iterator patterns and `collect`
 │   ├── lib.rs                 # Library root with `mod` declarations
 │   ├── main.rs                # Main binary to run module examples
+│   ├── all_in_one_shapes_example.rs                #An example covering everything learned in frontend masters course (rust for typescript) 
 │   └── structs_and_data.rs    # Structs and data-enriched enums
 └── Cargo.toml                 # Project manifest
+└── shapes.txt # final example test file
+└── test.txt # io test file
+└── numbers.txt # io test file
 ```
 
 ## How to Run
@@ -58,7 +62,8 @@ Rust offers memory safety without garbage collection, high performance, and an e
 - [x] File I/O and Command-Line Arguments
 - [x] Iterators and `collect`
 - [x] Structs and Data-Enriched Enums
-- [ ] Borrow Checker & Lifetime Rules (Deep Dive)
+- [x] Borrow Checker
+- [ ] Lifetime Rules 
 - [ ] Traits and Generics
 - [ ] Advanced Traits & Generics
 - [ ] Modules and Project Organization (Crates and Workspaces)

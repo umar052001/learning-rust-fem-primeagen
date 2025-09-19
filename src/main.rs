@@ -1,8 +1,9 @@
+use anyhow::Result;
 // Use the library crate we are building. The name is determined by your Cargo.toml,
 // The `*` imports all the public modules we defined in `lib.rs`.
 use learnrust::*;
 
-fn main() {
+fn main() -> Result<()> {
     println!("--- Running Enum Examples ---");
     enums::run_examples();
     println!("\n");
@@ -28,7 +29,7 @@ fn main() {
     println!("\n");
 
     println!("--- Running Traits Examples ---");
-    traits::run_examples();
+    all_in_shapes_example::run_examples()?;
     println!("\n");
 
     println!("--- Running File I/O Example ---");
@@ -37,4 +38,5 @@ fn main() {
     println!("\n");
 
     println!("--- All examples finished ---");
+    return Ok(());
 }
